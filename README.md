@@ -1,2 +1,2 @@
 # ecommerce1
-it a e commerce website 
+its a e-commerce website 
