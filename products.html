@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopNow | Products</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <h1>ShopNow</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="cart-btn">Cart (0)</button>
+  </nav>
+
+  <!-- PRODUCTS SECTION -->
+  <section class="products">
+    <div class="product">
+      <img src="https://shop.khelomore.com/cdn/shop/files/AnyConv.com__8786481_1_1445x.jpg?v=1696852103" alt="Stylish Shoes">
+      <h3>Stylish Shoes</h3>
+      <p>49.99</p>
+      <button onclick="addToCart('Stylish Shoes', 49.99)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/61pIzNaNRWL.jpg" alt="Smart Watch">
+      <h3>Smart Watch</h3>
+      <p>89.99</p>
+      <button onclick="addToCart('Smart Watch', 89.99)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://assets.myntassets.com/dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/25958298/2023/11/20/51b73681-ee3f-4c4b-bf9a-81bdf30106961700491664620Headphones1.jpg" alt="Wireless Headphones">
+      <h3>Wireless Headphones</h3>
+      <p>69.99</p>
+      <button onclick="addToCart('Wireless Headphones', 69.99)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://kinnoti.com/cdn/shop/files/15_b3b116a1-198d-444c-b19f-d8591dbe6181.png?v=1751718142&width=3000" alt="Leather Bag">
+      <h3>Leather Bag</h3>
+      <p>59.99</p>
+      <button onclick="addToCart('Leather Bag', 59.99)">Add to Cart</button>
+    </div>
+  </section>
+
+  <!-- CART SIDEBAR -->
+  <div class="cart-sidebar" id="cartSidebar">
+    <h2>Your Cart</h2>
+    <ul class="cart-items" id="cartItems"></ul>
+    <div class="cart-total" id="cartTotal">Total: 0.00</div>
+    <button class="checkout-btn" onclick="checkout()">Checkout</button>
+    <button class="close-cart" onclick="toggleCart()">Close Cart</button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2025 ShopNow. All rights reserved.
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
